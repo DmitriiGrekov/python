@@ -1,0 +1,20 @@
+{% extends 'article/basic.html'%}
+
+
+
+{% block title%}
+Главная
+{% endblock%}
+
+
+
+{% block content%}
+
+{% for a in ar%}
+
+<h1><a href="{% url 'show_one' a.pk  %}">{{a.title}}</a></h1>
+
+
+
+{% endfor %}
+{% endblock %}

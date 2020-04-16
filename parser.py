@@ -51,7 +51,9 @@ if __name__ =='__main__':
     pages = get_pages(html)
     ARTICLES = []
 
-    with Pool(5) as p:
+    with Pool(2) as p:
+
         p.map(make_all,[i for i in range(1,pages+1)])
+
     print(len(ARTICLES))
 
