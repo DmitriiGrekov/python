@@ -6,7 +6,6 @@ URL = 'http://www.orenburg.ru/official/news/246/38173/%20/background/konkurs_sot
 
 HEADER = {'user-agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36','accept':"*/*"}
 
-
 site = 'http://www.orenburg.ru'
 
 def get_html(url,params = None):
